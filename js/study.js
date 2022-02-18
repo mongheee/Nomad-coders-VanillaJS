@@ -70,8 +70,32 @@ setTimeout(sayHello, 5000);
     // ex) document.body.appendChile(createImage);
 
 /* arrow function 화살표 함수
+     function name(item) {
+        console.log("It is", item)     => It is item
+     };                   
+     parsedToDos.forEach(name);
+    ===
+     parsedToDos.forEach((item) => console.log("It is", item));
 
-    function((item) => console.log("blablabla"))
+    -------------------------------------------------------------------------
+     function name(item) {
+             console.log("It is", item)     => It is item
+         };
+     ===
+     (item) => console.log("It is", item)
+*/
+
+/* filter()
+    ----------------------------------------------------------------------------
+    en = [a,b,c]
+    function call(){
+        return  ;
+    }
+    en.filter(call)
+
+    -> fileter는 call function에 en array안에 들어있는 item들은 하나씩 불러와서 function을 실행한다.
+       filter에 쓰이는 function은 반드시 return을 해줘야한다.
+       return에서 false인 item을 제외한 true인 item만 추출하여 새 array를 만든다.
 
 
 
