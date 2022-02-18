@@ -25,7 +25,7 @@ setTimeout(sayHello, 5000);
     const date = new Date() 
     // : 오늘 날짜를 가지고 온다.
     // Date object의 property를 이용하여 정보에 접근할 수 있다.
-    -> date.getHour(), date.getMinutes(), date.getseconds() 
+    date.getHour(), date.getMinutes(), date.getseconds() 
     
     date.getTime()
     //: millisecond로 날짜 date를 가지고옴
@@ -45,6 +45,7 @@ setTimeout(sayHello, 5000);
 //  Math module
     Math.random() 
     // : 0~1사의 값을 random으로 도출하는 function
+    // 함수의 범위에 1이 포함되지 않는다.
     Math.round() 
     // : 반올림을 해서 값을 도출하는 function
     Math.ceil() 
@@ -67,3 +68,12 @@ setTimeout(sayHello, 5000);
     // : html을 추가하는 내장 function
     // prpend는 body의 첫번째 자식으로 appendChild는 body의 마지막 자식으로 추가됨 
     // ex) document.body.appendChile(createImage);
+
+/* arrow function 화살표 함수
+
+    function((item) => console.log("blablabla"))
+
+
+
+
+*/
