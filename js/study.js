@@ -97,7 +97,34 @@ setTimeout(sayHello, 5000);
        filter에 쓰이는 function은 반드시 return을 해줘야한다.
        return에서 false인 item을 제외한 true인 item만 추출하여 새 array를 만든다.
 
-
-
-
 */
+
+/* weather.js
+    geolocation은 user의 좌표를 준다. 
+    WIFI, GPS, 위치 등의 user의 정보를 알 수 있다.
+
+    weather을 보여주는 api를 사용!
+    경도와 위도를 구하여 api키값과 함께 url을 가지고 온다
+    fetch(url); 을 통해서 
+        fetch : promise이다. 당장 뭔가 일어나지 않고 시간이 좀 걸린 뒤에 일어나는 것이다.
+            실제로 url에 접속할 필요 없이 JavaScript가 대신 url을 불러와서 브라우저에 정보를 준다.
+            개발자 network에 request정보 가져와짐
+        then : 
+            response로 받아준다.
+*/
+    navigator.geolocation.getCurrentPosition()
+    /* getCurrentPosition()은 두가지의 argument를 받는다.
+         - successCallback : 성공했을 때 실행될 함수
+            success function은 user의 위치를 GeolocationPosition object 로 준다.
+            coords.tlatitude : 위도, coords.longitude : 경도 
+         - errorCallback : 실패했을 때 실행될 함수
+    -----------------------------------------------------------------------------------
+    function seccess(){
+        //user의 좌표를 받는데 성공한다면 제공 받을 정보 사용 로직
+    }
+    function error(){
+        //user의 좌표를 받는데 실패했다면 user에게 제공할 로직
+    }
+
+    
+    */
