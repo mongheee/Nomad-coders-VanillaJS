@@ -1,0 +1,12 @@
+img {
+  background-size: cover;
+}
+#clock {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+  font-size: 80px;
+  color: aliceblue;
+}
